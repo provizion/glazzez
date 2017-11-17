@@ -12,7 +12,6 @@ const Input = ({ label, value, onChangeText, placeholder, secureTextEntry }) => 
         style={styles.inputStyle}
         onChangeText={onChangeText}
         value={value}
-        keybordType='number-pad'
       />
     </View>
   );

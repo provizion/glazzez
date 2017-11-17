@@ -1,0 +1,33 @@
+{
+  "month": 11,
+
+  "day": {
+    "calendarNumber":1,
+    "dayName": 2,
+    "startTime": 7,
+    "endTime": 22,
+  },
+  "visionLoad": [
+    {
+      "load": 0,
+      "brightness": "good",
+      "distance": "good",
+      "close-up time": "good",
+      "comment": "Overload, try to do smth"
+    },
+    {
+      "load": 0,
+      "brightness": "good",
+      "distance": "good",
+      "close-up time": "good",
+      "comment": "Overload, try to do smth"
+    },
+    {
+      "load": 0,
+      "brightness": "good",
+      "distance": "good",
+      "close-up time": "good",
+      "comment": "Overload, try to do smth"
+    }
+  ]
+}
