@@ -49,7 +49,7 @@ const MainNavigator = TabNavigator({
     },
 
     {
-    swipeEnabled: true,
+    swipeEnabled: false,
     tabBarPosition: 'bottom',
     animationEnabled: true,
     tabBarOptions: {

@@ -18,10 +18,11 @@ import {
 import LoginForm     from './src/components/LoginForm'
 import Main          from './src/components/Main'
 import MainNavigator from './src/components/MainNavigator'
+import CenterScreen from './src/components/CenterScreen'
 
 class App extends Component {
 
-  state = { loggedIn: false }
+  state = { loggedIn: true }
 
   componentWillMount() {
     firebase.initializeApp({
@@ -33,14 +34,6 @@ class App extends Component {
       messagingSenderId: "648104678663"
     })
 
-    /*firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({ loggedIn: true });
-      } else {
-        this.setState({ loggedIn: false })
-      }
-    })*/
-
   }
 
   changeToLogin() {
@@ -51,7 +44,7 @@ class App extends Component {
 
     switch (this.state.loggedIn) {
       case true:
-        return <MainNavigator />
+        return <CenterScreen />
       case false:
         return <LoginForm changeToLogin={ this.changeToLogin.bind(this) }/>
       default:
